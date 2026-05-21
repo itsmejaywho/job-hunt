@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.png';
 import '../styles/Navbar.css';
 
@@ -21,7 +22,9 @@ function Navbar() {
           <a href='#'>Community</a>
         </div>
 
-        <button type='button' className='navbar-cta'>Get Started</button>
+        <Link to='/login' className='navbar-cta'>
+          Get Started
+        </Link>
       </div>
     </nav>
   );

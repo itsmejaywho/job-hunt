@@ -1,0 +1,226 @@
+.login-page {
+  min-height: 100svh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(circle at top left, rgba(192, 243, 231, 0.9), transparent 30%),
+    radial-gradient(circle at bottom center, rgba(213, 240, 232, 0.95), transparent 26%),
+    linear-gradient(180deg, #f8fbfa 0%, #edf5f2 100%);
+  padding: 20px 20px 16px;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #11352c;
+}
+
+.login-shell {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 620px);
+  margin: 0 auto;
+  border: 2px solid #4ab89b;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  box-shadow: 0 22px 40px rgba(58, 124, 106, 0.12);
+}
+
+.login-page__glow {
+  position: absolute;
+  border-radius: 48px;
+  background: rgba(205, 243, 233, 0.72);
+  filter: blur(1px);
+}
+
+.login-page__glow--left {
+  top: 18px;
+  left: 44px;
+  width: 320px;
+  height: 210px;
+}
+
+.login-page__glow--right {
+  right: 78px;
+  bottom: 18px;
+  width: 340px;
+  height: 260px;
+}
+
+.login-card {
+  border-radius: 28px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5faf8 100%);
+  padding: 26px;
+  box-shadow: 0 18px 38px rgba(73, 127, 111, 0.14);
+}
+
+.login-card__eyebrow {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #00684A;
+}
+
+.login-card__title {
+  margin-top: 12px;
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  line-height: 1;
+  color: #153a31;
+}
+
+.login-card__copy {
+  margin-top: 12px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: #597369;
+}
+
+.login-card__form {
+  margin-top: 18px;
+}
+
+.login-card__field {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.login-card__field span {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #1d5e4c;
+}
+
+.login-card__field input {
+  width: 100%;
+  border: 1.5px solid #badfd4;
+  border-radius: 16px;
+  background: #f9fcfb;
+  padding: 12px 15px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1rem;
+  color: #183c33;
+  outline: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.login-card__field input:focus {
+  border-color: #18a67e;
+  box-shadow: 0 0 0 4px rgba(24, 166, 126, 0.12);
+  transform: translateY(-1px);
+}
+
+.login-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 6px 0 16px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #537166;
+}
+
+.login-card__checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-card__checkbox input {
+  accent-color: #15946f;
+}
+
+.login-card__meta a,
+.login-card__footer a,
+.login-page__back {
+  color: #116c54;
+  text-decoration: none;
+}
+
+.login-card__submit {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #19c58d 0%, #0f9e73 100%);
+  padding: 13px 18px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f7fffc;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.login-card__submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(19, 143, 104, 0.24);
+}
+
+.login-card__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #ddebe6;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.92rem;
+  color: #5d766c;
+}
+
+.login-page__back {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: fit-content;
+  margin: 12px auto 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .login-page {
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+
+  .login-card__footer,
+  .login-card__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .login-page {
+    padding-top: 20px;
+  }
+
+  .login-page__glow--left {
+    left: -30px;
+    width: 220px;
+    height: 180px;
+  }
+
+  .login-page__glow--right {
+    right: -20px;
+    width: 230px;
+    height: 200px;
+  }
+
+  .login-shell {
+    padding: 8px;
+  }
+
+  .login-card {
+    padding: 24px 20px;
+  }
+}

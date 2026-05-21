@@ -41,7 +41,7 @@
 }
 
 .navbar-cta {
-  @apply cursor-pointer rounded-full border-2 border-[#00684A] bg-[#00ED64] px-6 py-2 text-sm font-medium text-black;
+  @apply inline-flex cursor-pointer items-center justify-center rounded-full border-2 border-[#00684A] bg-[#00ED64] px-6 py-2 text-sm font-medium text-black no-underline;
   @apply transition-all duration-300 ease-in-out;
 }
 
