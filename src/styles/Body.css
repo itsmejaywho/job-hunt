@@ -1,0 +1,52 @@
+.body-container {
+  @apply flex-1 bg-[#efefef] px-6 py-10 md:px-10 md:py-16;
+}
+
+.hero-section {
+  @apply mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[1fr_0.95fr] md:items-center;
+}
+
+.hero-content {
+  @apply max-w-2xl;
+}
+
+.hero-eyebrow {
+  @apply mb-10 text-xs font-semibold uppercase tracking-[0.35em] text-[#00684A];
+}
+
+.hero-title {
+  @apply text-5xl font-semibold leading-tight text-[#0c2230];
+}
+
+.hero-title::first-line {
+  color: #00684A;
+}
+
+.hero-description {
+  @apply mt-8 max-w-xl text-2xl leading-relaxed text-[#44535d];
+}
+
+.hero-actions {
+  @apply mt-10 flex items-center gap-4;
+}
+
+.hero-primary-btn {
+  @apply rounded-md border-2 border-[#00684A] bg-[#00ED64] px-8 py-3 text-lg font-semibold text-[#06281d] ;
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.hero-primary-btn:hover{
+  @apply rounded-full
+}
+
+.hero-secondary-btn {
+  @apply rounded-md border border-transparent px-4 py-3 text-lg font-semibold text-[#0c2230] transition-colors duration-200 hover:text-[#00684A];
+}
+
+.hero-media-placeholder {
+  @apply min-h-[460px] w-full rounded-2xl border border-dashed border-[#79c8b0] bg-[#f4f7f7] md:self-center;
+}
+
+.body-content {
+  @apply mx-auto mt-12 w-full max-w-6xl h-[500px];
+}

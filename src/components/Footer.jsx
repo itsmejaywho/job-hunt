@@ -5,7 +5,7 @@ function Footer() {
         <div className='grid gap-10 md:grid-cols-[1.6fr_1fr_1fr_1fr]'>
           <div className='space-y-4'>
             <h2 className='text-2xl font-semibold tracking-tight'>hackAssist</h2>
-            <p className='max-w-xs text-sm text-[#2e3242]'>There is no risk-free trading</p>
+            <p className='max-w-xs text-sm text-[#2e3242]'>From Problem to Solution</p>
           </div>
           <ul className='space-y-2 text-sm'>
             <li>About</li>
