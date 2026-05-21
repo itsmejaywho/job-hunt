@@ -1,0 +1,50 @@
+.navbar {
+  @apply border-b border-[#e2e3e8] bg-[#ececf0] px-6 md:px-10;
+}
+
+.navbar-container {
+  @apply mx-auto flex w-full max-w-6xl items-center justify-between;
+}
+
+.navbar-brand {
+  @apply flex items-center gap-1;
+}
+
+.navbar-logo {
+  @apply h-[70px] w-[70px] object-contain;
+}
+
+.navbar-name {
+  @apply text-2xl font-semibold text-[#00684A];
+}
+
+.navbar-links {
+  @apply hidden items-center gap-4 text-sm text-[#23273a] md:flex;
+}
+
+.navbar-links a {
+  @apply relative inline-block pb-1 text-inherit no-underline transition-colors duration-200 ease-in-out;
+}
+
+.navbar-links a::after {
+  content: '';
+  @apply absolute -bottom-2 left-0 h-[2px] w-full origin-left scale-x-0 bg-[#00684A] transition-transform duration-300 ease-in-out;
+}
+
+.navbar-links a:hover::after {
+  @apply scale-x-100;
+}
+
+
+.navbar-link-with-icon {
+  @apply inline-flex items-center gap-1;
+}
+
+.navbar-cta {
+  @apply cursor-pointer rounded-full border-2 border-[#00684A] bg-[#00ED64] px-6 py-2 text-sm font-medium text-black;
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.navbar-cta:hover {
+  @apply rounded-md bg-[#00ED64];
+}
